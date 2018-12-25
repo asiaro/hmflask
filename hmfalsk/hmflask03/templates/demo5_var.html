@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+{# 模板中直接可以使用的变量 request session g #}
+<label>{{ request.url }}</label><br/>
+<label>{{ session.name }}</label><br/>
+<label>{{ g.age }}</label><br/>
+
+{# 模板中直接可以使用的函数 url_for  get_flashed_messages #}
+<label>{{ url_for("index") }}</label><br/>
+
+{# get_flashed_messages  获取所有的闪现消息(一般用于状态提示 如弹窗)   #}
+{% for message in get_flashed_messages() %}
+<script>alert("{{ message }}")</script>
+
+{% endfor %}
+
+
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+{# 1. 抽取相同的内容 #}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+<h2>顶部内容</h2>
+
+{# 2.在出现差异的位置定义代码块 #}
+{% block content_block %}
+我是父类内容
+{% endblock %}
+
+<h2>底部内容</h2>
+</body>
+
+</html>

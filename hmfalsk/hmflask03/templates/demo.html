@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<label>{{ name }}</label><br/>
+<label>{{ age_dict }}</label><br/>
+<label>{{ age_dict["name"] }}</label><br/>
+<label>{{ age_dict.name  }}</label><br/>  {# 支持点语法 #}
+<label>{{ height_list[0] }}</label><br/>
+<label>{{ height_list.0 }}</label><br/>
+<label>{{ user.type }}</label><br/>  {#  模板变量可以是自定义类型 #}
+<label>{{ user.is_login() }}</label><br/>  {# 方法和函数都可以在模板中调用 #}
+</body>
+</html>

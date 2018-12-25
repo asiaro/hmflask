@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<label>{{ name | lower }}</label><br/>
+<label>{{ name | lower | reverse }}</label><br/>  {# 支持链式调用 #}
+<label>{{ height_list | sum }}</label><br/>
+<label>{{ h1_tag | safe }}</label><br/>  {# jinja2会自动对html字符进行转义, 可以使用过滤器safe, 来取消自动转义 #}
+<label>{{ height_list | li_reverse }}</label><br/>
+
+
+{# 过滤代码块: 对代码块中所有内容进行格式转换 #}
+{% filter upper %}
+    hello<br/>
+    world
+{% endfilter %}
+
+</body>
+</html>

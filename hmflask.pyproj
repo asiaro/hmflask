@@ -1,0 +1,114 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>d67295df-c9dd-4d30-880b-6773c16a391c</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{1b580a1a-fdb3-4b32-83e1-6407eb2722e6};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>
+    </StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <LaunchProvider>Web launcher</LaunchProvider>
+    <WebBrowserUrl>http://localhost</WebBrowserUrl>
+    <OutputPath>.</OutputPath>
+    <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
+    <Name>hmflask</Name>
+    <RootNamespace>hmflask</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="hmfalsk\" />
+    <Folder Include="hmfalsk\hmflask01\" />
+    <Folder Include="hmfalsk\hmflask03\templates\" />
+    <Folder Include="hmfalsk\hmflask02\" />
+    <Folder Include="hmfalsk\hmflask03\" />
+    <Folder Include="hmfalsk\hmlflask04\" />
+    <Folder Include="hmfalsk\hmlflask04\templates\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="hmfalsk\hmflask01\flask01.py" />
+    <Compile Include="hmfalsk\hmflask01\flask02.py" />
+    <Compile Include="hmfalsk\hmflask01\flask03.py" />
+    <Compile Include="hmfalsk\hmflask01\flask04.py" />
+    <Compile Include="hmfalsk\hmflask01\flask05.py" />
+    <Compile Include="hmfalsk\hmflask03\控制代码块.py" />
+    <Compile Include="hmfalsk\hmflask03\模版继承.py" />
+    <Compile Include="hmfalsk\hmflask03\模版变量函数.py" />
+    <Compile Include="hmfalsk\hmflask03\sqlalchemy基本使用.py" />
+    <Compile Include="hmfalsk\hmflask03\模版02.py" />
+    <Compile Include="hmfalsk\hmflask03\模版01.py" />
+    <Compile Include="hmfalsk\hmflask03\过滤器.py" />
+    <Compile Include="hmfalsk\hmlflask04\flask_sqlalchemy_test.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="hmfalsk\hmlflask04\flask_sqlite.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="hmfalsk\hmlflask04\hm_04_图书案例.py" />
+    <Compile Include="hmfalsk\hmlflask04\图书借阅.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="hmfalsk\hmflask03\templates\demo.html" />
+    <Content Include="hmfalsk\hmflask03\templates\demo2_filter.html" />
+    <Content Include="hmfalsk\hmflask03\templates\demo3_control.html" />
+    <Content Include="hmfalsk\hmflask03\templates\demo4_base.html" />
+    <Content Include="hmfalsk\hmflask03\templates\demo4_detail.html" />
+    <Content Include="hmfalsk\hmflask03\templates\demo4_index.html" />
+    <Content Include="hmfalsk\hmflask03\templates\demo5_var.html" />
+    <Content Include="hmfalsk\hmflask03\templates\index.html" />
+    <Content Include="hmfalsk\hmlflask04\flask.db" />
+    <Content Include="hmfalsk\hmlflask04\templates\图书借阅.html" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
